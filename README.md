@@ -53,7 +53,7 @@ Follow these steps to set up project for development or running locally.
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/fPersist-Ventures.git
+   git clone https://github.com/your-username/nft-minting-dapp.git
    cd <repository-directory>
    ```
 
