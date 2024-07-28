@@ -30,4 +30,5 @@ const Image = React.forwardRef<HTMLImageElement, ImageProps>(({ className, round
 
 Image.displayName = "Image"; // Set display name for debugging
 
+// eslint-disable-next-line react-refresh/only-export-components
 export { Image, imageVariants };

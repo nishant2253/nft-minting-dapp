@@ -6,6 +6,7 @@ import { nodePolyfills } from "vite-plugin-node-polyfills";
 export default defineConfig({
   build: {
     outDir: "build",
+    sourcemap: true, // Ensure sourcemaps are enabled
   },
   server: {
     open: true,
@@ -14,13 +15,11 @@ export default defineConfig({
     react(),
     nodePolyfills({
       exclude: ["fs"],
-      // Whether to polyfill specific globals.
       globals: {
         Buffer: true,
         global: true,
         process: true,
       },
-      // Whether to polyfill `node:` protocol imports.
       protocolImports: true,
     }),
   ],
