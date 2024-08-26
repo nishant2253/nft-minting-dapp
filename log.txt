@@ -1,7 +1,7 @@
-File preview
+File build
 
 Errors :
-0 : status file error
+0 : open file error
 
 Warnings :
 0 : open file error

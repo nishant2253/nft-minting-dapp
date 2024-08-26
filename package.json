@@ -1,5 +1,5 @@
 {
-  "name": "nft-minting-dapp-template",
+  "name": "cryptoflow",
   "private": true,
   "version": "0.0.0",
   "license": "Apache-2.0",
@@ -10,7 +10,7 @@
     "move:publish": "node ./scripts/move/publish",
     "move:upgrade": "node ./scripts/move/upgrade",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vue-tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "_fmt": "prettier 'frontend/**/*.ts'",
