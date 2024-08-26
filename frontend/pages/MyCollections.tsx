@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GetCollectionDataResponse } from "@aptos-labs/ts-sdk";
 // Internal components
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -13,8 +13,8 @@ export function MyCollections() {
   const collections: Array<GetCollectionDataResponse> = useGetCollections();
 
   // If we are on Production mode, redierct to the mint page
-  // const navigate = useNavigate();
-  // if (import.meta.env.PROD) navigate("/", { replace: true });
+  const navigate = useNavigate();
+  if (import.meta.env.PROD) navigate("/my-collections", { replace: true });
 
   return (
     <>
