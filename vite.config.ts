@@ -5,7 +5,7 @@ import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 export default defineConfig({
   build: {
-    outDir: "dist",
+    outDir: "build",
     sourcemap: true, // Ensure sourcemaps are enabled
   },
   server: {
